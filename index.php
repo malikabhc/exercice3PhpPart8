@@ -1,7 +1,9 @@
 <?php
-if(!empty($_POST['login']) && !empty($_POST['password'])) {
-setcookie('login', $_POST['login'], time() + 365*24*3600, null, null, false);
-setcookie('password', $_POST['password'], time() + 365*24*3600, null, null, false);
+if (!empty($_POST['login'])) {
+    setcookie('login', $_POST['login'], time() + 365 * 24 * 3600, null, null, false);
+}
+if (!empty($_POST['password'])) {
+    setcookie('password', $_POST['password'], time() + 365 * 24 * 3600, null, null, false);
 }
 ?>
 <!DOCTYPE html>
