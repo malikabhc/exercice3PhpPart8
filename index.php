@@ -1,9 +1,11 @@
 <?php
+//Setcookie stocke les infos dans les cookies
 if (!empty($_POST['login'])) {
     setcookie('login', $_POST['login'], time() + 365 * 24 * 3600, null, null, false);
 }
 if (!empty($_POST['password'])) {
     setcookie('password', $_POST['password'], time() + 365 * 24 * 3600, null, null, false);
+// 365 * 24 * 3600 => permet de stocker le cookie pendant 1 an
 }
 ?>
 <!DOCTYPE html>
